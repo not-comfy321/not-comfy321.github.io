@@ -1,13 +1,21 @@
 <!-- LB -->
 
 <item>
-<title>Test Blog Post</title>
+<title>Test Blog post
+Test Blog post
+Test Blog Post</title>
 <guid>https://jacobwoods.xyz/rblog.html#test-blog-post.html</guid>
-<pubDate>Tue, 19 Mar 2019 01:23:12 -0700</pubDate>
+<pubDate>Tue, 19 Mar 2019 01:36:09 -0700</pubDate>
 <description><![CDATA[
-<p>This is a test blog post. If you can see it, my blog should be working.</p>
+<p>This is just a test, you can ignore this. If you can see this, it means my blog system is working!</p>
 ]]></description>
 </item>
+
+
+
+
+
+
 
 
 

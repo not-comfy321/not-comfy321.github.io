@@ -1,6 +1,164 @@
 <!-- LB -->
 
 <item>
+<title>Ricing Firefox</title>
+<guid>https://jacobwoods.xyz/rblog.html#ricing-firefox.html</guid>
+<pubDate>Fri, 22 Mar 2019 18:56:33 -0700</pubDate>
+<description><![CDATA[
+<p>
+<img src=browser.png>
+Firefox is, in my opinion, the most extensively customizable modern
+mainstream web browser. The customizability of Firefox is, in fact, the
+sole reason for which I prefer Firefox to, say, Ungoogled Chromium. There
+are a few good guides out there, which I will be linking at the beginning
+of each section, but they are scattered about. I think there should be one
+universal and encompassing guide to ricing Firefox.
+</p>
+<h2> Contents </h2>
+<ul>
+	<li>I) Homepage/New Tab Page</li>
+	<li>II) Stylus</li>
+	<li>III) Userchrome.css</li>
+	<li>IV) Themes</li>
+</ul>
+<h2>I) Homepage/New Tab Page</h2>
+<p>
+<i><b>Relevant Links: <a href="https://www.4chan.org/wg/html-css">/wg/ thread</a>,<a
+			 href="https://pastebin.com/ZJvDn0eN"> a pastebin, </a><a
+			 href=https://startpages.github.io/>Startpage Emporium</a>
+	</b></i><br>
+	To start off, we will be reviewing one of the two of these four sections which
+	is not specific to Firefox: homepages. The concept is very simple:
+	a webpage which is functionally useful when you open a blank Firefox
+	window. It may include anything. Common elements include:<br>
+	-Links to frequently visited sites<br>
+	-Search bar<br>
+	-Weather<br>
+	-Autistic /biz/ crypto prices<br>
+	-Waifus telling you to have a nice day<br>
+	Point is, there is plenty of creativity you can use here, and its not rare that I will
+	see someone do something new and cool in a homepage. To create a basic, /wg/ ready
+	homepage, you can simply make one using HTML+CSS (although you may need to write JS
+	scripts for some things, like weather). This can be done fairly easily. If you're lazy,
+	you can perform the age-old art of <i>stealing other people's shit</i>. See above, there
+	are tons and tons of homepages people make. I'm currently using one I stole off of someone
+	else (and changed a bit) but I am appalled at how bloated it is and I will probably write
+	my own soon. Once you have a homepage you like, it's time to apply it. You can host the
+	html file wherever you want. I recommend hosting it on <a href="https://pages.github.com/">Github Pages</a>
+	. Once it's hosted, go to <a href="about:preferences#home">about:preferences</a>, and
+	change <b>Homepage and new windows</b> to <b>Custom URLs...</b>. This is all you need to do if you
+	just want to change your homepage. However, chances are, you also want to change your
+	newtab. Unfortunately, Firefox removed our ability to do custom newtabs a few updates ago,
+	so I use the plugin <a
+				    href="https://addons.mozilla.org/en-US/Firefox/addon/custom-new-tab-page/">
+		Custom New Tab</a> to change the newtab page. Just set the newtab to your hosted
+	file, and you should be good to go.
+</p>
+<h2>II) Stylus</h2>
+<p>
+<b><i>Relevant Links: <a href="userstyles.org">Userstyles</a></i></b><br>
+In case you're unaware, <a
+				href=https://addons.mozilla.org/en-US/Firefox/addon/styl-us/>Stylus</a>
+is a plugin for Firefox and Chrome that lets you use your own custom CSS on websites. The
+tool is pretty cool and can lead to some very nice site designs. Stylus also lets you use
+<b>Global Styles</b>, which is css that will apply to every website you visit. While it
+may sound good to have a consistent style among all websites you visit, you soon realize
+that Global Styles are autistic and will make 80% of websites look like garbage
+(seriously, just don't use them). Admittedly, Stylus can be somewhat difficult to use
+sometimes. It requires you to study the website's CSS and mostly involves a lot of
+tinkering. I recommend writing CSS for only websites you frequent, if you value your time.
+Of course, <a href=userstyles.org>userstyles.org</a> has a ton of good styles you can
+steal. One thing to note, before I wrap up this section, is that I would NOT recommend
+writing Stylus CSS for 4chan. (INSERT SHILL MODE)
+Use <a href="https://github.com/ccd0/4chan-x">4chan x</a>
++ <a href="https://github.com/KevinParnell/OneeChan">Oneechan</a> for a significantly
+better browsing experience and a very easy and extensible customization system (LEAVE
+SHILL MODE). You'll also need <a
+				      href=https://greasyfork.org/en/scripts/374723-oneechan-4channel-update>this</a>
+*monkey script to use Oneechan now.
+</p>
+<h2>III) userchrome.css</h2>
+<p>
+<b><i>Relevant Links: <a href=https://www.userchrome.org/>Userchrome.org</a>, <a
+			 href=https://www.reddit.com/r/FirefoxCSS>/r/Firefoxcss</a>
+</b></i>
+Userchrome.css is one one of the best things about ricing Firefox. It lets you change the
+way the browser's interface looks, including (almost) everything from tabs to
+scrollbars. It can be a little tricky to actually get started with a userChrome.css file. 
+<b>Create userchrome.css</b> in <b>~/.mozilla/chrome</b> (create this folder if
+necessary.).
+To be honest, userchrome.css can be much more difficult to tinker with than site styles.
+You will have to become familiar with the wack-ass Firefox CSS elements and, if you want
+to do anything other than recolor stuff on the browser, you will require a more extended
+knowledge of CSS. That is why I recommend stealing something off of <a
+									    href=https://www.reddit.com/r/Firefoxcss>/r/Firefoxcss</a>
+and modifying it to your liking (Sorting by top...all time can give you actual themes and
+not just questions). Me, being the lazy fuaarrrrk that I am use a modified version of <a
+											      href=https://www.reddit.com/r/FirefoxCSS/comments/7ignsk/oneline_flat_interface_dark_light/>
+this</a>. 
+</p>
+<h2>Themes</h2>
+<p>
+Last, but not least (actually, yes, least) are Firefox themes. Firefox themes are
+necessary to color things like the URL bar which cannot be changed by userchrome.css. You
+can find many Firefox themes on the <a
+					    href=https://addons.mozilla.org/en-US/Firefox/themes/>Firefox
+					    Addons Catalog</a>
+However, you will find that <i>LITERALLY EVERY SINGLE ONE OF THESE</i> is <i>garbage</i>.
+Seriously, it's astounding how bad these are. So, what we will do is make our own Firefox
+theme. Making a theme isn't too bad, but applying one can be a pain. To make a theme, you
+should go about like you were making any Firefox addon. Create a <b>manifest.json</b> file
+and populate it like this: (this is my theme)
+<pre><code>
+{
+"manifest_version": 2,
+"name": "fft",
+"version": "0.3",
+"theme": {
+    "colors": {
+       "accentcolor": "#0c0c0c",
+       "textcolor": "white",
+       "toolbar": "#0c0c0c",
+       "toolbar_text": "white",
+       "toolbar_field": "#0c0c0c",
+       "toolbar_field_border": "#0c0c0c",
+       "toolbar_field_text": "white",
+       "toolbar_top_separator": "#ffa64f",
+       "toolbar_bottom_separator": "#0c0c0c",
+       "toolbar_vertical_separator": "#0c0c0c"
+    }
+  }
+}
+</pre></code>
+Then package it into a .zip or .xpi:
+<code> zip -r -FS theme.zip * </code>
+Now that you have this, we can "test" out the theme.
+<ul>
+	<li>1) Go to <a href="about:debugging">about:debugging</a></li>
+	<li>2) Click "Load Temporary Add-On"</li>
+	<li>3) Choose your file.</li>
+</ul>
+HOWEVER!!!<br>
+Doing this, every time you restart Firefox, you will have lost your theme. So in order to
+avert this ill fate, we will (prepare yourself) PUBLISH OUR THEME. Thanks """MOZ://A""".
+So, basically you will have to go through a small process to get your theme published. 
+<ul>
+	<li>1)Visit <a href=https://addons.mozilla.org/en-US/Firefox/>Firefox Addons</a> and
+	make a """MOZ://A""" account</li>
+	<li>2)Go to the <a href=https://addons.mozilla.org/en-US/developers/">developer
+			club</a> and click <b>Submit a New Add-on</b></li>
+
+</ul>
+<br><br>
+Anyways, this is just a very bare bones guide to ricing Firefox. For specific details, use
+the sources at the top of each section and google. Maybe ask around in /wg/ or /g/
+threads. Have a nice day!
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>How this Website is Hosted</title>
 <guid>https://jacobwoods.xyz/rblog.html#how-this-website-is-hosted.html</guid>
 <pubDate>Tue, 19 Mar 2019 15:44:02 -0700</pubDate>

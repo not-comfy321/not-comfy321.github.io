@@ -1,6 +1,7 @@
 body { background-color: #0c0c0c; }
 pre code
 {
+	color: white;
 	background-color: #0c0c0c;
 	display: block;
 	padding: 10%;

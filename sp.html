@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--TODO Add CSS.-->
+		<title>Cozy!</title>
+		<link rel="stylesheet" href=sstyle.css>
+		<body style="background-color:#0c0c0c">
+	</head>
+	<body>
+		<div class="hi">
+			<h1>Awake, Arise, or be ever Fall'n.</h1>
+		</div>
+		<div class="time">
+			<h2 id="ctime">
+			<script>
+				function pad(n){return n<10 ? '0'+n : n}
+function doDate()
+{
+	var str = "";
+	var now = new Date();
+	str +=""+pad(now.getHours())+":"+pad(now.getMinutes())+":"+pad(now.getSeconds());
+	pad(str);
+	var mstr=pad(str);
+	document.getElementById("ctime").innerHTML = mstr;
+}
+setInterval(doDate, 1000);
+			</script>
+			</h2>
+
+			<h2 id="cdate">
+			<script>
+
+				function pad(n){return n<10 ? '0'+n : n}
+function doDate()
+{
+	var str = "";
+	var now = new Date();
+	str +=""+pad(now.getMonth()+1)+"/"+pad(now.getDate())+"/"+pad(now.getFullYear());
+	pad(str);
+	var mstr=pad(str);
+	document.getElementById("cdate").innerHTML = mstr;
+}
+setInterval(doDate, 1000);
+			</script>
+				</h2>
+		</div>
+		<div class="links">
+			<p>
+			<ul>
+				<li><a href="https://www.github.com">github</a><br></li>
+				<li><a href="https://www.cock.li">mail</a><br></li>
+				<li><a href="https://www.hotmail.com">mail2</a><br></li>
+				<li><a href="https://www.4chan.org/g/">4chan</a><br></li>
+				<li><a href="https://www.lainchan.org">lain</a><br></li>
+				<li><a href="https://wiki.archlinux.org">arch</a><br></li>
+				<li><a href="https://jacobwoods.xyz">site</a><br></li>
+				<li><a href="https://discord.gg">tism</a><br></li>
+				<li><a href="https://en.wikipedia.org">wiki</a><br></li>
+			</ul>
+			</p>
+		</div>
+	</body>
+</html>

@@ -14,7 +14,7 @@
 			<h2 id="ctime">
 			<script>
 				function pad(n){return n<10 ? '0'+n : n}
-function doDate()
+function doTime()
 {
 	var str = "";
 	var now = new Date();
@@ -23,7 +23,8 @@ function doDate()
 	var mstr=pad(str);
 	document.getElementById("ctime").innerHTML = mstr;
 }
-setInterval(doDate, 1000);
+doTime();
+setInterval(doTate, 1000);
 			</script>
 			</h2>
 
@@ -40,7 +41,7 @@ function doDate()
 	var mstr=pad(str);
 	document.getElementById("cdate").innerHTML = mstr;
 }
-setInterval(doDate, 1000);
+doDate();
 			</script>
 				</h2>
 		</div>

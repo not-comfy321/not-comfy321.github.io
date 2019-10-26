@@ -6,7 +6,7 @@ css="../style.css"
 blogfile="rblog.html"
 indexfile="index.html"
 rssfile="rss.xml"
-[ -z "$EDITOR" ] && EDITOR="vim"
+[ -z "$EDITOR" ] && EDITOR="nvim"
 
 [ ! -d blog/.drafts ] &&
 read -erp "Initialize blog in $webdir?" ask &&
